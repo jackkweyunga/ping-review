@@ -2,6 +2,14 @@
 
 ## Usage
 
+##### excel structure
+
+|IP Address|Live|
+|----------|----|
+| aa.bb.cc.dd |    |
+|     -      |     |
+|     -      |     |
+
 
 syntax
 ```cmd
@@ -15,4 +23,4 @@ example
   python script.py ips.xlsx
 ```
 
-`new.xlsx` is the one with added data.
+`new.xlsx` is generatedd with added data.
