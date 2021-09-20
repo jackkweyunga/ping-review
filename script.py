@@ -1,6 +1,6 @@
 import pandas as pd
 import subprocess
-
+import sys
 
 def record_ping(path):
 
@@ -21,6 +21,9 @@ def output(ip):
         return "Yes"
     return "Decommisioned"
 
+# listen for args
+if sys.argv[1] != None:
 
+    path = sys.argv[1]
 
-record_ping("./ips.xlsx")
+    record_ping(path)
