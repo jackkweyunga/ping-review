@@ -17,7 +17,11 @@ def record_ping(path):
     
 
 def output(ip):
-    return subprocess.run(["ping",f"{ip}"], capture_output=True)
+    x = subprocess.run(["ping",f"{ip}"], capture_output=True)
+    if x.returncode == 0:
+        return "live"
+    return "decommisioned"
+
 
 
 record_ping("./ips.xlsx")
